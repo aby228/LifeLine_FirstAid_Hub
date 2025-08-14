@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- head
+
+        Purpose:
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) (favicon)
+        - [ ] Any time after
+        -->
+    <title>LifeLine First Aid Hub</title>
+     <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="icon" type="image/png" href="./img/logo.png">
+    <link rel="apple-touch-icon" href="./img/logo.png">
+    <style>
+        /* Dynamic favicon styling */
+        .favicon-heart {
+            animation: heartbeat 2s ease-in-out infinite;
+        }
+        
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- navbar
+    Purpose:
+    - Navigation bar that allows users to jump to different sections of the webpage
+    - Also holds buttons for user settings (dark mode, reduce motion)
+
+    When To Modify:
+    - [ ] Project 4 (REQUIRED FEATURE)
+    - [ ] Project 5 (REQUIRED FEATURE) 
+    - [ ] Project 8 (STRETCH FEATURE) 
+    - [ ] Any time between / after
+    -->
+
+    <div class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#links">Resources</a></li>
+            <li><a href="https://www.redcross.org/take-a-class/first-aid" target="_blank">Red Cross</a></li>
+            <li><button id="theme-button">Toggle Dark Mode</button></li>
+            <li><button id="motion-button">Reduce Motion</button></li>
+        </ul>
+    </div>
+
+    <!-- headings
+
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 3 (REQUIRED FEATURE) 
+        - [ ] Project 4 (REQUIRED FEATURE) 
+        - [ ] Any time after
+        -->
+    <div class="header-container">
+        <div class="header-item">
+            <h1>LifeLine First Aid Hub</h1>
+        </div>
+        <div class="header-item">
+            <img id="header-img" src="./img/logo.png" alt="LifeLine First Aid Hub Logo" />
+        </div>
+    </div>
+    <h2 id="spook"><em>Empowering communities with life-saving knowledge, one click at a time</em></h2>
+    <div id="header-button">
+        <button type="button">First Aid Guidelines</button>
+        <button type="button">Emergency Contact</button>
+    </div>
+    <!-- about
+
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        -->
+    <h2 id="about">Our Mission</h2>
+    <p>
+        LifeLine First Aid Hub bridges the critical gap between medical emergencies and professional help by delivering
+        accessible,
+        step-by-step emergency medical guidance to anyone, anywhere.
+        Originally <em>Novata</em> conceived to serve rural communities in developing countries where healthcare access
+        is limited, this project has evolved into a comprehensive platform that welcomes learners from all
+        backgrounds—students, educators, healthcare professionals, and community volunteers alike.
+        The website serves as both an educational resource and the central hub for our upcoming mobile application,
+        featuring interactive first aid tutorials, project updates, and community feedback channels.
+        Whether you're a researcher seeking reliable medical protocols or someone who simply wants to be prepared for
+        life's unexpected moments, LifeLine provides the tools and knowledge needed to respond confidently when every
+        second counts.
+    </p>
+
+    <div class="about-container">
+        <div class="about-item">
+            <h3>What to Expect</h3>
+            <h4>Comprehensive Training</h4>
+            <ul>
+                <li> <b>Interactive Tutorials:</b> <i>Step-by-step first aid procedures with visual guides</i></li>
+                <li> <b>Emergency Protocols:</b> <i>Quick reference guides for common medical emergencies</i></li>
+                <li> <b>Community Support:</b> <i>Connect with healthcare professionals and volunteers</i></li>
+            </ul>
+        </div>
+
+        <div class="about-item">
+            <h3>Our Mission</h3>
+            <h4>Empowering Communities</h4>
+            <p>LifeLine First Aid Hub is dedicated to making emergency medical knowledge accessible to everyone,
+                regardless of their location or background. We believe that every person should have the confidence and
+                skills to respond effectively in emergency situations.</p>
+        </div>
+    </div>
+
+    <!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        -->
+    <h2 id="timeline">Timeline</h2>
+
+    <div class="timeline-container">
+        <div class="timeline-item">
+            <img alt="5-phase emergency response timeline from injury assessment to professional medical care, showing critical timing and actions for each 0-20 minute phase"
+                src="./img/timeline.jpeg" />
+            <h3>Emergency Response Timeline</h3>
+            <p>This guide breaks down the crucial first 20 minutes of emergency response into five color-coded phases,
+                from
+                immediate assessment to professional medical handover. Each phase shows specific timing and actions,
+                helping
+                responders understand how individual first aid techniques fit together in a coordinated, time-sensitive
+                response
+                plan.</p>
+        </div>
+
+        <div class="timeline-item">
+            <img alt="Emergency first aid decision flowchart guiding responders through consciousness assessment, injury severity evaluation, and appropriate treatment or emergency service decisions"
+                src="./img/Emergency.png" />
+            <h3>Treatment Decision Flowchart</h3>
+            <p>This flowchart guides first aid responders through critical decision points, from checking consciousness
+                to
+                determining injury severity and appropriate treatment responses. The color-coded pathways help users
+                quickly
+                navigate complex emergency situations and confidently decide when to apply first aid versus when to
+                immediately
+                call for professional help.</p>
+        </div>
+    </div>
+
+    <!-- rsvp
+
+Purpose:
+- Section for users to sign up for the event
+- Contains a form for users to input their information, 
+and a list of other users who have signed up
+
+When To Modify:
+- [ ] Project 6 (REQUIRED FEATURE) 
+- [ ] Project 6 (STRETCH FEATURE) 
+- [ ] Any time after
+--> 
+<div id="rsvp">
+    <h2>Join Our Community</h2>
+    <p id="rsvp-count">⭐ 3 healthcare professionals have joined our mission!</p>
+    <div class="rsvp-container">
+        <div class="rsvp-para">
+            <h3>Ready to Make a Difference?</h3>
+            <p>Join our growing community of healthcare professionals, educators, and community volunteers who are committed to making emergency medical knowledge accessible to everyone. By signing up, you'll be among the first to access our interactive first aid tutorials, receive updates on our mobile app development, and connect with like-minded individuals who share our mission of empowering communities with life-saving skills.</p>
+            <p>Whether you're a medical professional looking to contribute your expertise, a student eager to learn, or a community leader wanting to make your neighborhood safer, your participation helps us build a stronger, more prepared society.</p>
+        </div>
+        <div class="rsvp-participants">
+            <h4>Our Community Members</h4>
+            <p>🎟️ Dr. Simon Sackitey from Accra, Ghana has joined.</p>
+            <p>🎟️ Nurse Michaela Baker from London Area, United Kingdom has joined.</p>
+            <p>🎟️ Dr. Rahul Thompson from Canterbury, New Zealand has joined.</p>
+        </div>
+    </div>
+
+    <!--- Sign RSVP Form --->
+    <div class="form-container">
+        <form id="rsvp-form" title="rsvp-form">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" required>
+            </div>
+        </form>
+        <!-- Submit button -->
+        <button id="rsvp-button">Join Our Mission</button>
+    </div>      
+</div>
+    <!-- success modal
+
+Purpose:
+- Modal that appears when a user successfully signs up for the event
+- Contains a personalized message and image
+
+When To Modify:
+- [ ] Project 9 (REQUIRED FEATURE)
+- [ ] Project 9 (STRETCH FEATURE) 
+- [ ] Any time after
+--> 
+
+<div id="success-modal" class="modal">
+    <div class="modal-container">
+        <div id="modal-item">
+            <p id="modal-text">Thank you for joining our mission!</p>
+            <button id="close-modal">Close</button>
+        </div>
+        <div id="modal-item">
+            <img id="modal-image" src="./img/logo.png" alt="LifeLine First Aid Hub Logo" />
+        </div>
+    </div>
+</div>
+
+    <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        -->
+    <h2 id="links">Training Resources</h2>
+
+    <div class="video-container">
+        <!-- CPR Training Video -->
+        <a class="video-block" href="https://www.youtube.com/watch?v=Plse2FOkV4Q&t=94s&pp=ygUMY3ByIHRyYWluaW5n" target="_blank">
+            <article>
+                <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/Plse2FOkV4Q/maxresdefault.jpg" alt="CPR Training Video Thumbnail" />
+                    <div class="play-button">▶</div>
+                </div>
+                <h3>CPR Training</h3>
+                <p>Learn essential CPR techniques and life-saving procedures through this comprehensive training video.</p>
+            </article>
+        </a>
+
+        <!-- Basic First Aid Training Video -->
+        <a class="video-block" href="https://www.youtube.com/watch?v=ErxKDbH-iiI&pp=ygVRQmFzaWMgRmlyc3QgQWlkIHRyYWluaW5nIOKAkyAoSExUQUlEMDEwIOKAkyBQcm92aWRlIEJhc2ljIEVtZXJnZW5jeSBMaWZlIFN1cHBvcnQp" target="_blank">
+            <article>
+                <div class="video-thumbnail">
+                    <img src="https://img.youtube.com/vi/ErxKDbH-iiI/maxresdefault.jpg" alt="Basic First Aid Training Video Thumbnail" />
+                    <div class="play-button">▶</div>
+                </div>
+                <h3>Basic First Aid Training</h3>
+                <p>Comprehensive guide to providing basic emergency life support and first aid procedures.</p>
+            </article>
+        </a>
+    </div>
+
+
+
+    <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+    <div class="footer">
+        <a href="https://www.redcross.org/take-a-class/first-aid" target="_blank">Red Cross First Aid Training</a>
+        <a href="https://www.who.int/emergencies/first-aid" target="_blank">WHO Emergency Guidelines</a>
+        <span>© 2023 LifeLine First Aid Hub. <em>Empowering communities with life-saving knowledge.</em></span>
+    </div>
+    <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+    <script src="index.js"></script>
+
+</body>
+
+</html>
